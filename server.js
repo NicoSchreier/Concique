@@ -7,7 +7,7 @@ const clubRouter = require('./api/routes/club-routes');
 const barRouter = require('./api/routes/bar-routes');
 const searchClubRouter = require('./api/routes/searchClub-routes');
 const searchBarRouter = require('./api/routes/searchBar-routes');
-//We use express a web application framework
+//We use express a web application framework - test
 const app = express();
 //Select our port 3000
 const port = process.env.PORT ?? 3000;
