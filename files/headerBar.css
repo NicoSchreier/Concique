@@ -182,7 +182,6 @@ label {
     }
 
     .nav-link {
-        display: flex;
         margin: 0;
     }
 }
