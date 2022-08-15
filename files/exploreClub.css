@@ -239,3 +239,20 @@ article{
     height: 20em;
     padding-bottom: 1em;
 }
+
+@media only screen and (min-width: 600px) {
+    #batches section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+
+    #batches section h3 {
+        flex-basis: 100%;
+    }
+
+    #batches section article {
+        flex-basis: 33.33%;
+    }
+}
