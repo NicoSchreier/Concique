@@ -115,11 +115,19 @@ header {
 .dropdown-menu {
     background-color: #09262F!important;
     border: none!important;
+    position: static !important;
 }
 
 .dropdown-item {
     margin-left: 3em;
     color: #A7BFD4 !important;
+}
+
+.dropdown-item:hover {
+    background-color: #144756 !important;
+    color: yellow !important;
+    font-size: 1.75rem;
+    margin-left: 3.5rem;
 }
 
 
