@@ -127,13 +127,13 @@ header {
 .dropdown-item {
     margin-left: 3em;
     color: var(--bar-color); !important;
+    border: 1px solid var(--bar-color);
+    border-radius: 5px;
 }
 
 .dropdown-item:hover {
     background-color: #144756 !important;
     color: yellow !important;
-    font-size: 1.75rem;
-    margin-left: 3.5rem;
 }
 
 .headerLine {
