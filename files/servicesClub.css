@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500&display=swap');
+
+:root {
+    --dark-color: #09262F;
+    --bright-color: #A7BFD5;
+    --icon-hover-color: #3b5998;
+    --seperate_line-color: #294652;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Darker Grotesque', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--dark-color) !important;
+}
+
+
+/* * * * * * * * * * * * * * * *
+
+
+Main Section:
+- About Us Team Members
+- About Us Text
+
+
+* * * * * * * * * * * * * * * * */
+
+ul {
+    padding: 0!important;
+}
+
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bright-color);
+    font-size: 34px;
+}
+
+.mobile_about_us {
+    width: 100%;
+    display: block;
+    padding-top: 2em;
+    font-size: 50px;
+    text-align: center;
+}
+
+.mobile_list {
+    display: grid;
+    grid-template-areas:
+        "a1 a2"
+        "a3 a4"
+        "a5 a6"
+        "a7 a8"
+        "a9 a9"
+        "a10 a10";
+    font-size: 50px;
+    width: 100%;
+    padding-top: 1em;
+    border-top: 3px solid var(--seperate_line-color);
+    box-shadow: 0 -40px 30px #071e26;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+#icon_schreier {
+    grid-area: a1;
+    font-size: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+#name_schreier {
+    grid-area: a2;
+    font-size: 35px;
+    line-height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#name_haber {
+    grid-area: a3;
+    font-size: 35px;
+    line-height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+#icon_haber {
+    grid-area: a4;
+    font-size: 100px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+#icon_schulterer {
+    grid-area: a5;
+    font-size: 100px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+#name_schulterer {
+    grid-area: a6;
+    font-size: 35px;
+    line-height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+#name_schwalm {
+    grid-area: a7;
+    font-size: 35px;
+    line-height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#icon_schwalm {
+    grid-area: a8;
+    font-size: 100px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.mobile_about_text {
+    grid-area: a9;
+    font-size: 35px;
+    margin: 1em;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    border-top: 3px solid var(--seperate_line-color);
+}
+
+
+/* * * * * * * * * * * * * * * *
+
+
+Media Query for Mobile
+
+
+* * * * * * * * * * * * * * * * */
+
+
+
+@media (max-width: 800px) {
+
+
+    /* * * * * * * * * * * * * * * *
+
+
+    Navigation Bar
+
+
+    * * * * * * * * * * * * * * * * */
+
+    #navbar {
+        position: fixed;
+        bottom: -100%;
+        right: 0;
+        width: 100%;
+        transition: 0.5s;
+        display: block;
+        justify-content: right;
+        align-items: center;
+        background-color: var(--dark-color);
+        opacity: 0.8;
+    }
+
+    #navbar.active {
+        height: calc(100vh - 100px);
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        justify-content: right;
+        align-items: center;
+    }
+
+    #navbar ul li a {
+        color: var(--bright-color);
+        font-size: 25px;
+    }
+
+    .wrapper {
+        display: none;
+    }
+}
