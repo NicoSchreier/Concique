@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500&display=swap');
 
 :root {
-    --dark-color: #09262F;
+    --main-color: #09262F;
     --bright-color: #A7BFD5;
     --icon-hover-color: #3b5998;
     --seperate_line-color: #294652;
@@ -18,13 +18,13 @@
 }
 
 body {
-    background-color: var(--dark-color) !important;
+    background-color: var(--main-color) !important;
 }
 
 .grid-container-first {
     display: grid;
     grid-template-columns: 50% 50%;
-    background-color: var(--dark-color);
+    background-color: var(--main-color);
     padding: 40px;
     margin-top: 50px;
     border-top: 3px solid #294652;
@@ -46,9 +46,9 @@ body {
 .grid-container-dark {
     display: grid;
     grid-template-columns: 50% 50%;
-    background-color: var(--dark-color);
+    background-color: var(--main-color);
     padding: 40px;
-    border-top: 3px solid var(--dark-color);
+    border-top: 3px solid var(--main-color);
     border-radius: 1em;
     place-items: center;
 }
@@ -107,7 +107,7 @@ Media Query for Mobile
         display: block;
         justify-content: right;
         align-items: center;
-        background-color: var(--dark-color);
+        background-color: var(--main-color);
         opacity: 0.8;
     }
 
@@ -140,7 +140,7 @@ Media Query for Mobile
     .grid-container-first {
         display: grid;
         grid-template-columns: 100%;
-        background-color: var(--dark-color);
+        background-color: var(--main-color);
         margin-top: 50px;
         border-top: 3px solid #294652;
         border-radius: 3em;
@@ -158,8 +158,8 @@ Media Query for Mobile
     .grid-container-dark {
         display: grid;
         grid-template-columns: 100%;
-        background-color: var(--dark-color);
-        border-top: 3px solid var(--dark-color);
+        background-color: var(--main-color);
+        border-top: 3px solid var(--main-color);
         border-radius: 1em;
     }
 

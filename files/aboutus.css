@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500&display=swap');
 
 :root {
-    --dark-color: #09262F;
+    --main-color: #09262F;
     --bright-color: #A7BFD5;
     --icon-hover-color: #3b5998;
     --seperate_line-color: #294652;
@@ -17,7 +17,7 @@
 }
 
 body {
-    background-color: var(--dark-color) !important;
+    background-color: var(--main-color) !important;
 }
 
 
@@ -73,7 +73,7 @@ Media Query for Mobile
         display: block;
         justify-content: right;
         align-items: center;
-        background-color: var(--dark-color);
+        background-color: var(--main-color);
         opacity: 0.8;
     }
 

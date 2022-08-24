@@ -5,6 +5,10 @@ html, body, main, header {
     scroll-behavior: smooth;
 }
 
+:root {
+    --main-color: #09262F;
+}
+
 /*region Font Specifications*/
 h1 {
     text-align: center;

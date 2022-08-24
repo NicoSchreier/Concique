@@ -121,14 +121,14 @@ header {
 .dropdown-menu {
     background-color: transparent!important;
     border: none!important;
-    margin-top: 3em;
+    margin-top: 3em !important;
 }
 
 .dropdown-item {
     background-color: #09262F!important;
     color: var(--text-color) !important;
-    border: 1px solid #A7BFD4;
-    border-radius: 5px;
+    border: 1px solid #A7BFD4 !important;
+    border-radius: 5px !important;;
     width: 5.5em !important;
 }
 
