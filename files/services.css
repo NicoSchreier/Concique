@@ -30,6 +30,7 @@ body {
     border-top: 3px solid #294652;
     border-radius: 3em;
     box-shadow: 0 -40px 30px #071e26;
+    place-items: center;
 }
 
 .grid-container-bright {
@@ -39,6 +40,7 @@ body {
     padding: 40px;
     border-top: 3px solid var(--seperate_line-color);
     border-radius: 1em;
+    place-items: center;
 }
 
 .grid-container-dark {
@@ -48,6 +50,7 @@ body {
     padding: 40px;
     border-top: 3px solid var(--dark-color);
     border-radius: 1em;
+    place-items: center;
 }
 
 .grid-container > div {
@@ -67,7 +70,7 @@ body {
 .service-description {
     font-size: 1.25em;
     color: var(--text-color);
-    padding-right: 200px;
+    padding-right: 50px;
 }
 
 .service_header {
@@ -76,9 +79,7 @@ body {
 
 /* * * * * * * * * * * * * * * *
 
-
 Media Query for Mobile
-
 
 * * * * * * * * * * * * * * * * */
 
@@ -89,9 +90,7 @@ Media Query for Mobile
 
     /* * * * * * * * * * * * * * * *
 
-
     Navigation Bar
-
 
     * * * * * * * * * * * * * * * * */
 
@@ -126,5 +125,42 @@ Media Query for Mobile
     #navbar ul li a {
         color: var(--bright-color);
         font-size: 25px;
+    }
+
+    /* * * * * * * * * * * * * * * *
+
+    Inhalt
+
+    * * * * * * * * * * * * * * * * */
+
+    .grid-container-first {
+        display: grid;
+        grid-template-columns: 100%;
+        background-color: var(--dark-color);
+        margin-top: 50px;
+        border-top: 3px solid #294652;
+        border-radius: 3em;
+        box-shadow: 0 -40px 30px #071e26;
+    }
+
+    .grid-container-bright {
+        display: grid;
+        grid-template-columns: 100%;
+        background-color: var(--seperate_line-color);
+        border-top: 3px solid var(--seperate_line-color);
+        border-radius: 1em;
+    }
+
+    .grid-container-dark {
+        display: grid;
+        grid-template-columns: 100%;
+        background-color: var(--dark-color);
+        border-top: 3px solid var(--dark-color);
+        border-radius: 1em;
+    }
+
+    .service-description {
+        text-align: center;
+        padding-right: 0;
     }
 }
