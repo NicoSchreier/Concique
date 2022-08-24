@@ -5,7 +5,7 @@
     --bright-color: #A7BFD5;
     --icon-hover-color: #3b5998;
     --seperate_line-color: #294652;
-    --club-color: #A7BFD4;
+    --text-color: #ffffff;
 }
 
 * {
@@ -20,58 +20,28 @@ body {
     background-color: var(--dark-color) !important;
 }
 
-.grid-container-first {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: var(--dark-color);
-    padding: 40px;
-    margin-top: 50px;
-    border-top: 3px solid #294652;
-    border-radius: 3em;
-    box-shadow: 0 -40px 30px #071e26;
+
+/* * * * * * * * * * * * * * * *
+
+
+Main Section:
+
+
+* * * * * * * * * * * * * * * * */
+
+ul {
+    padding: 0!important;
 }
 
-.grid-container-bright {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: var(--seperate_line-color);
-    padding: 40px;
-    border-top: 3px solid var(--seperate_line-color);
-    border-radius: 1em;
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 34px;
 }
 
-.grid-container-dark {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: var(--dark-color);
-    padding: 40px;
-    border-top: 3px solid var(--dark-color);
-    border-radius: 1em;
-}
-
-.grid-container > div {
-    text-align: center;
-    padding: 20px 0;
-    color: #ffffff;
-}
-
-.service_img {
-    height: auto;
-    width: auto;
-    max-width: 300px;
-    max-height: 300px;
-    border-radius: 30px;
-}
-
-.service-description {
-    font-size: 1.25em;
-    color: #ffffff; /* TODO: ENTFERNEN SOBALD FARBKONZEPT ANGEPASST IST */
-    padding-right: 200px;
-}
-
-.service_header {
-    font-size: 2em;
-}
 
 /* * * * * * * * * * * * * * * *
 

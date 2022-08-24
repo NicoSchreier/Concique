@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500&display=swap');
+
+:root {
+    --dark-color: #09262F;
+    --bright-color: #A7BFD5;
+    --icon-hover-color: #3b5998;
+    --seperate_line-color: #294652;
+    --club-color: #A7BFD4;
+    --text-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Darker Grotesque', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--dark-color) !important;
+}
+
+.grid-container-first {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: var(--dark-color);
+    padding: 40px;
+    margin-top: 50px;
+    border-top: 3px solid #294652;
+    border-radius: 3em;
+    box-shadow: 0 -40px 30px #071e26;
+}
+
+.grid-container-bright {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: var(--seperate_line-color);
+    padding: 40px;
+    border-top: 3px solid var(--seperate_line-color);
+    border-radius: 1em;
+}
+
+.grid-container-dark {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: var(--dark-color);
+    padding: 40px;
+    border-top: 3px solid var(--dark-color);
+    border-radius: 1em;
+}
+
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    color: var(--text-color);
+}
+
+.service_img {
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 30px;
+}
+
+.service-description {
+    font-size: 1.25em;
+    color: var(--text-color);
+    padding-right: 200px;
+}
+
+.service_header {
+    font-size: 2em;
+}
+
+/* * * * * * * * * * * * * * * *
+
+
+Media Query for Mobile
+
+
+* * * * * * * * * * * * * * * * */
+
+
+
+@media (max-width: 800px) {
+
+
+    /* * * * * * * * * * * * * * * *
+
+
+    Navigation Bar
+
+
+    * * * * * * * * * * * * * * * * */
+
+    #navbar {
+        position: fixed;
+        bottom: -100%;
+        right: 0;
+        width: 100%;
+        transition: 0.5s;
+        display: block;
+        justify-content: right;
+        align-items: center;
+        background-color: var(--dark-color);
+        opacity: 0.8;
+    }
+
+    #navbar.active {
+        height: calc(100vh - 100px);
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        justify-content: right;
+        align-items: center;
+    }
+
+    #navbar ul li a {
+        color: var(--bright-color);
+        font-size: 25px;
+    }
+}

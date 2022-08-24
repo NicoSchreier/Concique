@@ -26,7 +26,7 @@ ul {
 
 h1 {
     text-align: center;
-    color: var(--club-color);
+    color: var(--text-color);
     margin: 2em;
     padding-bottom: 1em;
     padding-top: 1em;
@@ -65,7 +65,7 @@ li {
 
 .content{
     grid-area: content;
-    color: var(--club-color);
+    color: var(--text-color);
     border-top: 3px solid #294652;
     border-radius: 3em;
     background-color: var(--main-color);
@@ -138,6 +138,6 @@ li {
 }
 
 :hover {
-    color: var(--club-color);
+    color: var(--text-color);
 }
 

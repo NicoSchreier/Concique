@@ -3,6 +3,7 @@
     --bright-color: #A7BFD5;
     --icon-hover-color: #3b5998;
     --seperate_line-color: #294652;
+    --text-color: #ffffff;
 }
 
 ul {
@@ -53,21 +54,21 @@ footer {
 
 .footer_icons {
     padding: 1em;
-    color: var(--bright-color);
+    color: var(--text-color);
     text-decoration: none;
 }
 
 .footer_options {
-    color: var(--bright-color);
+    color: var(--text-color);
     text-decoration: none;
 }
 
 .footer_options:hover, .footer_icons:hover{
-    color: white;
+    color: var(--bright-color);
 }
 
 #copyright {
-    color: var(--bright-color);
+    color: var(--text-color);
     font-size: 0.8em;
     text-align: center;
     padding-top: 2em;

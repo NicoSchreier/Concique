@@ -17,7 +17,7 @@ header {
 
 .bg-custom, .navbar-custom {
     background-color: #09262F !important;
-    color: var(--bar-color);
+    color: var(--text-color);
 }
 .navbar-collapse, .navbar-nav, .nav-item {
     background-color: transparent !important;
@@ -100,14 +100,14 @@ header {
 /*endregion*/
 
 .headerIcons {
-    color: #A7BFD4;
+    color: var(--text-color);
     vertical-align: middle;
     padding-right: 0.5em;
 }
 
 .nav-link {
     margin-left: 2em;
-    color: #A7BFD4 !important;
+    color: var(--text-color) !important;
     font-weight: 600;
     float: left !important;
 }
@@ -120,14 +120,14 @@ header {
 
 .dropdown-item {
     margin-left: 3em;
-    color: #A7BFD4 !important;
+    color: var(--text-color) !important;
     border: 1px solid #A7BFD4;
     border-radius: 5px;
 }
 
 .dropdown-item:hover {
     background-color: #144756 !important;
-    color: yellow !important;
+    color: var(--bright-color) !important;
 }
 
 
@@ -146,7 +146,7 @@ li {
 /*region Font Specifications*/
 h1 {
     text-align: center;
-    color: #A7BFD4;
+    color: var(--text-color);
     font-size: 2.7em !important;
     font-weight: 600 !important;
 }
@@ -154,17 +154,17 @@ h1 {
 h2 {
     font-size: 2.5em !important;
     font-weight: 400!important;
-    color: #A7BFD4;
+    color: var(--text-color);
 }
 
 p {
     font-size: 1.2em !important;
-    color: #A7BFD4;
+    color: var(--text-color);
 }
 
 a:link, a:visited,  a:hover, a:active {
     font-size: 1.2em;
-    color: #A7BFD4;
+    color: var(--text-color);
     text-decoration: none !important;
     box-shadow: none;
 }

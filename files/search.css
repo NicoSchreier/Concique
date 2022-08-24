@@ -8,7 +8,7 @@ html, body, main, header {
 /*region Font Specifications*/
 h1 {
     text-align: center;
-    color: #F8F26D;
+    color: var(--text-color);
     font-size: 2.7em !important;
     font-weight: 600 !important;
 }
@@ -16,17 +16,17 @@ h1 {
 h2 {
     font-size: 2.5em !important;
     font-weight: 400!important;
-    color: #F8F26D;
+    color: var(--text-color);
 }
 
 p {
     font-size: 1.2em !important;
-    color: #F8F26D;
+    color: var(--text-color);
 }
 
 a:link, a:visited,  a:hover, a:active {
     font-size: 1.2em;
-    color: #F8F26D;
+    color: var(--text-color);
     text-decoration: none !important;
     box-shadow: none;
 }
@@ -61,7 +61,7 @@ header {
 
 .results {
     grid-area: clubList;
-    color: #F8F26D;
+    color: var(--text-color);
 }
 
 .wrapper {
@@ -77,7 +77,7 @@ header {
 
 /*region List*/
 #searchListContainer {
-    border-top: 3px solid #858238;
+    border-top: 3px solid #294652;
     border-radius: 3em;
     background-color: #09262F;
     box-shadow: 0 -40px 30px #071e26;
@@ -96,13 +96,13 @@ li {
 
 .searchList {
     margin-top: 4.5em;
-    border-top: 2px solid #858238;
+    border-top: 2px solid #294652;
     border-bottom: 2px solid #071e26;
 }
 
 .searchElement {
     border-top: 2px solid #071e26;
-    border-bottom: 2px solid #858238;
+    border-bottom: 2px solid #294652;
 }
 
 /*endregion*/
@@ -123,7 +123,7 @@ li {
 
 .line {
     grid-area: a2;
-    background-color: #F8F26D;
+    background-color: var(--text-color);
     width: 2px;
     height: 100%;
     margin-right: 1.5em;
@@ -137,7 +137,7 @@ li {
 
 /*region Grid Elements*/
 input, select {
-    border: 1px solid #F8F26D !important;
+    border: 1px solid #A7BFD4 !important;
     border-radius: 15px !important;
     width: 15em !important;
     height: 2em !important;
@@ -145,13 +145,13 @@ input, select {
     padding-right: 10px !important;
 
     background-color: #09262F !important;
-    color: #F8F26D !important;
+    color: var(--text-color) !important;
 }
 
 option {
     background-color: #09262F;
-    border: solid 2px #F8F26D;
-    color: #F8F26D;
+    border: solid 2px #A7BFD4;
+    color: var(--text-color);
 }
 
 option:visited {
@@ -159,23 +159,22 @@ option:visited {
 }
 
 input:focus {
-    outline-color: white;
+    outline-color: var(--text-color);
 }
 
 ::-webkit-calendar-picker-indicator {
     filter: invert(1);
-    color: #F8F26D;
 }
 
 label {
     padding-left: 15px;
-    color: #F8F26D;
+    color: var(--text-color);
 }
 
 .listIcon {
     width: 30px;
     height: 30px;
-    color: #F8F26D;
+    color: var(--text-color);
 }
 /*endregion*/
 
@@ -186,16 +185,16 @@ label {
     height: 3.5em;
 
     border-radius: 1em;
-    border: 1px solid #F8F26D;
+    border: 1px solid #A7BFD4;
 
     background-color: #071e26;
     transition-duration: 0.4s;
-    color: #F8F26D;
+    color: var(--text-color);
 }
 
 #searchButton:active {
-    color: #071e26;
-    background-color: #F8F26D;
+    color: var(--text-color);
+    background-color: #A7BFD4;
 }
 
 #searchIcon {
@@ -206,12 +205,12 @@ label {
 
 /*region Show Results*/
 #scrollDown>a {
-    color: #F8F26D;
+    color: var(--text-color);
     width: auto;
 }
 
 #scrollDown>a:active {
-    color: white;
+    color: var(--text-color);
 }
 
 #scrollDownIcon {
@@ -248,23 +247,23 @@ label {
 }
 
 #clubList {
-    border-top: 3px solid #858238;
+    border-top: 3px solid #294652;
     border-radius: 3em;
     background-color: #09262F;
-    box-shadow: 0px -40px 30px #071e26;
+    box-shadow: 0 -40px 30px #071e26;
 }
 
 #clubList>article {
     margin-top: 3em;
     padding-bottom: 1em;
-    border-bottom: solid #858238 2px;
+    border-bottom: solid #294652 2px;
 }
 
 .wallPaper {
     width: 85%;
     height: 15em;
     border-radius: 3em;
-    background-color: #F8F26D;
+    background-color: #A7BFD4;
 
     display: block;
     margin-left: auto;
@@ -286,16 +285,16 @@ label {
     height: 2.5em;
     border-radius: 1.5em;
 
-    border: 1px solid #F8F26D;
+    border: 1px solid #A7BFD4;
 
     background-color: #071e26;
     transition-duration: 0.1s;
-    color: #F8F26D;
+    color: var(--text-color);
 }
 
 .detailsButton:active {
-    color: #071e26;
-    background-color: #F8F26D;
+    color: var(--text-color);
+    background-color: #A7BFD4;
 }
 
 .detailButtonIcon {
@@ -312,11 +311,11 @@ label {
 
 article>button {
     border-radius: 1em;
-    border: 1px solid #F8F26D;
+    border: 1px solid #A7BFD4;
 
     background-color: #071e26;
     transition-duration: 0.4s;
-    color: #F8F26D;
+    color: var(--text-color);
 }
 
 article>button>label {
@@ -349,7 +348,7 @@ article>button>label {
         margin-left: auto;
         margin-right: auto;
 
-        border: solid #F8F26D 2px;
+        border: solid #A7BFD4 2px;
         border-radius: 2em;
 
         display: grid;
@@ -380,12 +379,12 @@ article>button>label {
     /*region Search Button*/
     #searchButton:hover {
         color: #071e26;
-        background-color: #F8F26D;
+        background-color: #A7BFD4;
     }
 
     #searchButton:active {
-        color: #F8F26D;
-        background-color: #858238;
+        color: #A7BFD4;
+        background-color: #294652;
     }
     /*endregion*/
 
@@ -394,7 +393,7 @@ article>button>label {
         width: 25%;
         height: 18em;
         border-radius: 3em;
-        background-color: #F8F26D;
+        background-color: #A7BFD4;
 
         display: block;
         margin-left: auto;
@@ -407,12 +406,12 @@ article>button>label {
 
     .detailsButton:hover {
         color: #071e26;
-        background-color: #F8F26D;
+        background-color: #A7BFD4;
     }
 
     .detailsButton:active {
-        background-color: #858238;
-        color: #F8F26D;
+        background-color: #294652;
+        color: #A7BFD4;
     }
 
     .infoLabel {
