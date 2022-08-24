@@ -5,6 +5,7 @@
     --bright-color: #A7BFD5;
     --icon-hover-color: #3b5998;
     --seperate_line-color: #294652;
+    --club-color: #A7BFD4;
 }
 
 * {
@@ -19,133 +20,58 @@ body {
     background-color: var(--dark-color) !important;
 }
 
-
-/* * * * * * * * * * * * * * * *
-
-
-Main Section:
-- About Us Team Members
-- About Us Text
-
-
-* * * * * * * * * * * * * * * * */
-
-ul {
-    padding: 0!important;
-}
-
-main {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--bright-color);
-    font-size: 34px;
-}
-
-.mobile_about_us {
-    width: 100%;
-    display: block;
-    padding-top: 2em;
-    font-size: 50px;
-    text-align: center;
-}
-
-.mobile_list {
+.grid-container-first {
     display: grid;
-    grid-template-areas:
-        "a1 a2"
-        "a3 a4"
-        "a5 a6"
-        "a7 a8"
-        "a9 a9"
-        "a10 a10";
-    font-size: 50px;
-    width: 100%;
-    padding-top: 1em;
-    border-top: 3px solid var(--seperate_line-color);
+    grid-template-columns: 50% 50%;
+    background-color: var(--dark-color);
+    padding: 40px;
+    margin-top: 50px;
+    border-top: 3px solid #294652;
+    border-radius: 3em;
     box-shadow: 0 -40px 30px #071e26;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
 }
 
-#icon_schreier {
-    grid-area: a1;
-    font-size: 100px;
-    justify-content: center;
-    align-items: center;
-}
-
-#name_schreier {
-    grid-area: a2;
-    font-size: 35px;
-    line-height: 50px;
-    justify-content: center;
-    align-items: center;
-}
-
-#name_haber {
-    grid-area: a3;
-    font-size: 35px;
-    line-height: 50px;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-}
-
-#icon_haber {
-    grid-area: a4;
-    font-size: 100px;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-}
-
-#icon_schulterer {
-    grid-area: a5;
-    font-size: 100px;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-}
-
-#name_schulterer {
-    grid-area: a6;
-    font-size: 35px;
-    line-height: 50px;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-}
-
-#name_schwalm {
-    grid-area: a7;
-    font-size: 35px;
-    line-height: 50px;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 20px;
-}
-
-#icon_schwalm {
-    grid-area: a8;
-    font-size: 100px;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 20px;
-}
-
-.mobile_about_text {
-    grid-area: a9;
-    font-size: 35px;
-    margin: 1em;
-    padding-top: 60px;
-    padding-bottom: 20px;
+.grid-container-bright {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: var(--seperate_line-color);
+    padding: 40px;
     border-top: 3px solid var(--seperate_line-color);
+    border-radius: 1em;
 }
 
+.grid-container-dark {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: var(--dark-color);
+    padding: 40px;
+    border-top: 3px solid var(--dark-color);
+    border-radius: 1em;
+}
+
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    color: #ffffff;
+}
+
+.service_img {
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 30px;
+}
+
+.service-description {
+    font-size: 1.25em;
+    color: #ffffff; /* TODO: ENTFERNEN SOBALD FARBKONZEPT ANGEPASST IST */
+    padding-right: 200px;
+}
+
+.service_header {
+    font-size: 2em;
+}
 
 /* * * * * * * * * * * * * * * *
 
@@ -199,9 +125,5 @@ Media Query for Mobile
     #navbar ul li a {
         color: var(--bright-color);
         font-size: 25px;
-    }
-
-    .wrapper {
-        display: none;
     }
 }
