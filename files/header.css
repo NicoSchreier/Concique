@@ -17,6 +17,7 @@ header {
 }
 
 .navbar-collapse {
+    margin-right: 3em;
     justify-content: flex-end !important;
 }
 
@@ -118,16 +119,17 @@ header {
 }
 
 .dropdown-menu {
-    background-color: #09262F!important;
+    background-color: transparent!important;
     border: none!important;
-    position: static !important;
+    margin-top: 3em;
 }
 
 .dropdown-item {
-    margin-left: 3em;
+    background-color: #09262F!important;
     color: var(--text-color) !important;
     border: 1px solid #A7BFD4;
     border-radius: 5px;
+    width: 5.5em !important;
 }
 
 .dropdown-item:hover {
@@ -135,6 +137,17 @@ header {
     color: var(--bright-color) !important;
 }
 
+.dropdown-toggle {
+    background-color: var(--text-color) !important;
+    border: var(--text-color) solid 1px;
+    border-radius: 5px;
+    color: var(--main-color) !important;
+}
+
+.dropdown-toggle ion-icon {
+    background-color: var(--text-color) !important;
+    color: var(--main-color);
+}
 
 .headerLine {
     height: 2em;
