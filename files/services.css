@@ -77,6 +77,10 @@ body {
     font-size: 2em;
 }
 
+.contact-button:hover {
+    color: var(--text-color);
+}
+
 /* * * * * * * * * * * * * * * *
 
 Media Query for Mobile
