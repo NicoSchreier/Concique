@@ -11,14 +11,19 @@ header {
     height: 50px;
 }
 
-.navbar-expand-lg, .navbar-nav {
-    background: transparent; !important;
-}
-
 .bg-custom, .navbar-custom {
     background-color: #09262F !important;
     color: var(--text-color);
 }
+
+.navbar-collapse {
+    justify-content: flex-end !important;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
 .navbar-collapse, .navbar-nav, .nav-item {
     background-color: transparent !important;
 }
@@ -132,10 +137,10 @@ header {
 
 
 .headerLine {
-    height: 4px;
-    width: 100%;
-    background-color: #294652;
-    border-bottom: solid #071e26 2px;
+    height: 2em;
+    width: 1px;
+    margin: 0 2em;
+    background-color: var(--bright-color) !important;
 }
 
 li {
@@ -178,10 +183,6 @@ label {
     .headerLine {
         border: none;
         background-color: transparent;
-    }
-
-    .nav-item {
-        min-width: 10em;
     }
 
     .nav-link {
