@@ -9,10 +9,21 @@
     <script src="index.js"></script>
 </head>
 <body>
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+<div id="pcScreen">
+    <main>
+        <ul>
+            <li id="barSection" onmouseover="mouseOverBar()" onmouseout="mouseOutBar()"><a href="exploreBar.html"><div class="landingPage_PC" id="barImg"></div><img src="images/logos/concique_logo_yellow.png" id="cLogoBar"><h2 id="barText">BAR</h2></a></li>
+            <li id="clubSection" onmouseover="mouseOverClub()" onmouseout="mouseOutClub()"><a href="exploreClub.html"><div class="landingPage_PC" id="clubImg"></div><img src="images/logos/concique_logo_blue.png" id="cLogoClub"><h2 id="clubText">CLUB</h2></a></li>
+            <li id="eventSection" onmouseover="mouseOverEvent()" onmouseout="mouseOutEvent()"><a href="exploreEvent.html"><div class="landingPage_PC" id="eventImg"></div><img src="images/logos/concique_logo_green.png" id="cLogoEvent"><h2 id="eventText">EVENT LOCATIONS</h2></a></li>
+        </ul>
+    </main>
+</div>
+<div id="phoneScreen">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -24,7 +35,7 @@
                 </div>
                 <div class="navigation" id="navarea_bar">
                     <p class="landingpage_title" id="title_bar">Bar</p>
-                    <input type="button" onclick=location.href="exploreBar.html" class="landingpage_button" id="button_bar" value="Search"></input>
+                    <input type="button" onclick=location.href="exploreBar.html" class="landingpage_button" id="button_bar" value="Search">
                 </div>
             </div>
         </div>
@@ -37,11 +48,23 @@
                 </div>
                 <div class="navigation" id="navarea_club">
                     <p class="landingpage_title" id="title_club">Club</p>
-                    <input type="button" onclick=location.href="exploreClub.html" class="landingpage_button" id="button_club" value="Search"></input>
+                    <input type="button" onclick=location.href="exploreClub.html" class="landingpage_button" id="button_club" value="Search">
                 </div>
             </div>
         </div>
-    </div>
+        <div class="carousel-item">
+            <div class="containerino">
+                <div class="image_content" id="imgarea_event">
+                    <div class="shadowbox"></div>
+                    <img src="images/landingpage_event.jpg" alt="Landing Page Club" class="d-block w-100 landingpage_img">
+                    <img src="images/logos/concique_logo_green.png" alt="Logo Blue" class="logo_img">
+                </div>
+                <div class="navigation" id="navarea_event">
+                    <p class="landingpage_title" id="title_eventlocation">Event Locations</p>
+                    <input type="button" onclick=location.href="exploreEvent.html" class="landingpage_button" id="button_eventlocation" value="Search">
+                </div>
+            </div>
+        </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -50,6 +73,8 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
+</div>
+</div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

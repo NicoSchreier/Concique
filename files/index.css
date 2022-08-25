@@ -16,6 +16,7 @@ body {
     font-size: 100%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .logo_img {
@@ -149,11 +150,132 @@ body {
  */
 
 @media (max-width: 700px) {
-
     .carousel-control-prev, .carousel-control-next {
         box-shadow: none;
     }
     .active {
         color: black;
     }
+}
+@media (max-width: 1299px) {
+    div#pcScreen{
+        display: none;
+        visibility: hidden;
+    }
+}
+@media (min-width: 1300px) {
+    div#phoneScreen{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+ul > li {
+    display: inline-block;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+}
+li {
+    margin: 0;
+}
+.landingPage_PC {
+    width: 33.33333vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    transition: transform 1s, filter 1s;
+    filter: grayscale(100%);
+}
+
+.landingPage_PC:hover {
+    transform: scale(1.25);
+    filter: grayscale(0%);
+}
+
+#barSection {
+    grid-area: img1;
+    width: 33.333vw;
+}
+
+#clubSection {
+    grid-area: img2;
+    width: 33.333vw;
+}
+
+#eventSection {
+    grid-area: img3;
+    width: 33.333vw;
+}
+#cLogoBar {
+    background-color: transparent;
+    opacity: 0;
+    width: 8vh;
+    position: absolute;
+    left: 13%;
+    top: 5%;
+}
+#cLogoClub {
+    background-color: transparent;
+    opacity: 0;
+    width: 8vh;
+    position: absolute;
+    left: 47%;
+    top: 5%;
+}
+#cLogoEvent {
+    background-color: transparent;
+    opacity: 0;
+    width: 8vh;
+    position: absolute;
+    left: 81%;
+    top: 5%;
+}
+#barText {
+    color: var(--bar-color);
+    font-size: 10vw;
+    opacity: 0;
+    background-color: transparent;
+    position: absolute;
+    left: 7%;
+    top: 45%;
+}
+
+#clubText {
+    color: var(--club-color);
+    font-size: 10vw;
+    opacity: 0;
+    background-color: transparent;
+    position: absolute;
+    left: 38%;
+    top: 45%;
+}
+
+#eventText {
+    color: var(--eventlocation-color);
+    font-size: 7vw;
+    opacity: 0;
+    background-color: transparent;
+    position: absolute;
+    left: 65%;
+    top: 35%;
+    text-align: center;
+}
+
+#barImg {
+    background-image: url("images/landingpage_bar.jpg");
+    background-size: cover;
+}
+
+#clubImg {
+    background-image: url("images/landingpage_club.jpg");
+    background-size: cover;
+}
+
+#eventImg {
+    background-image: url("images/landingpage_event.jpg");
+    background-size: cover;
 }
