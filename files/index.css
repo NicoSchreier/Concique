@@ -93,7 +93,7 @@ body {
 }
 
 #title_bar {
-    color: var(--bar-color);
+    color: var(--club-color);
 }
 
 #title_club {
@@ -101,7 +101,7 @@ body {
 }
 
 #title_eventlocation {
-    color: var(--eventlocation-color);
+    color: var(--club-color);
 }
 
 .landingpage_button {
@@ -124,7 +124,7 @@ body {
 }
 
 #button_bar {
-    color: var(--bar-color);
+    color: var(--club-color);
 }
 
 #button_club {
@@ -132,7 +132,7 @@ body {
 }
 
 #button_eventlocation {
-    color: var(--eventlocation-color);
+    color: var(--club-color);
 }
 /* - indicator position
 .carousel .carousel-indicators {
@@ -235,7 +235,7 @@ li {
     top: 5%;
 }
 #barText {
-    color: var(--bar-color);
+    color: var(--club-color);
     font-size: 10vw;
     opacity: 0;
     background-color: transparent;
@@ -255,7 +255,7 @@ li {
 }
 
 #eventText {
-    color: var(--eventlocation-color);
+    color: var(--club-color);
     font-size: 7vw;
     opacity: 0;
     background-color: transparent;
