@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500&display=swap');
+
+:root {
+    --main-color: #09262F;
+    --bright-color: #A7BFD5;
+    --icon-hover-color: #3b5998;
+    --seperate_line-color: #294652;
+    --text-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Darker Grotesque', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--main-color) !important;
+}
+
+.spacer {
+    background-color: var(--main-color);
+    padding: 40px;
+    margin-top: 50px;
+    border-top: 3px solid #294652;
+    border-radius: 3em;
+    box-shadow: 0 -40px 30px #071e26;
+}
+
+.impressum_liste {
+    list-style: none;
+    font-size: 1.25em;
+    margin: 25px;
+    color: var(--text-color);
+}
+
+.contact-space {
+    padding-top: 100px;
+}
+
+.impressum_text {
+    padding-top: 100px;
+}
+
+@media (max-width: 800px) {
+    .impressum_liste {
+        font-size: 1em;
+    }
+}
