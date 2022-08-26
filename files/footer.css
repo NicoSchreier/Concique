@@ -17,7 +17,7 @@ footer {
 .mobile_footer {
     display: flex;
     background-color: #09262F;
-    border-top: solid #294652 3px;
+    border-top: solid var(--text-color) 3px;
     box-shadow: 0 -20px 30px #071e26;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;

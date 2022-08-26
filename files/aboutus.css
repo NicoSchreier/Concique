@@ -33,13 +33,44 @@ ul {
     padding: 0!important;
 }
 
-main {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.spacer {
+    background-color: var(--main-color);
+    padding: 40px;
+    margin-top: 50px;
+    border-top: 3px solid #294652;
+    border-radius: 3em;
+    box-shadow: 0 -40px 30px #071e26;
+    place-items: center;
+    text-align: center;
+}
+
+.about_us_text {
+    background-color: var(--main-color);
+    padding: 40px;
+    font-size: 1.5em;
     color: var(--text-color);
-    font-size: 34px;
+}
+
+#about_logo_desktop {
+    display: flex;
+    height: auto;
+    width: 100%;
+    max-height: 500px;
+    border-radius: 30px;
+}
+
+#about_logo_mobile {
+    display: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.about_us_team {
+    background-color: var(--main-color);
+    padding: 20px;
+    font-size: 1.25em;
+    color: var(--text-color);
 }
 
 
@@ -95,5 +126,18 @@ Media Query for Mobile
     #navbar ul li a {
         color: var(--bright-color);
         font-size: 25px;
+    }
+
+    .about_us_text {
+        font-size: 1.25em;
+        padding: 25px;
+    }
+
+    #about_logo_mobile {
+        display: flex;
+    }
+
+    #about_logo_desktop {
+        display: none;
     }
 }
