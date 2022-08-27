@@ -192,6 +192,10 @@ label {
         background-color: var(--seperate_line-color) !important;
     }
 
+    .navbar-collapse {
+        min-width: 100vw;
+    }
+
     ion-icon {
         display: none;
     }
@@ -201,7 +205,7 @@ label {
     }
 
     .navbar-nav .dropdown-toggle {
-        margin: .75em 0;
+        margin: .75em 1rem .75rem 0;
     }
 
     .navbar-nav .nav-link {
