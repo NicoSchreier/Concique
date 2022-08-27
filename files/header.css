@@ -196,7 +196,7 @@ label {
         min-width: 100vw;
     }
 
-    ion-icon {
+    header ion-icon {
         display: none;
     }
 
