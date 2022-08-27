@@ -84,6 +84,12 @@ class ClubController {
             }
         }
     }
+
+    sendForm = (req, res) => {
+        // TODO
+        console.log(req.body, "club");
+        res.sendStatus(200);
+    }
 }
 
 module.exports = new ClubController();

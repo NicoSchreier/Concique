@@ -11,4 +11,6 @@ routes.post('/club/dates/:dateNumber/places', controller.createPlace);
 routes.put('/club/places/:id', controller.updatePlace)
 routes.delete('/club/places/:id', controller.deletePlace)
 
+routes.post('/club/form', controller.sendForm)
+
 module.exports = routes;

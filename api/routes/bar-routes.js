@@ -11,4 +11,6 @@ routes.post('/bar/dates/:dateNumber/places', controller.createPlace);
 routes.put('/bar/places/:id', controller.updatePlace)
 routes.delete('/bar/places/:id', controller.deletePlace)
 
+routes.post('/bar/form', controller.sendForm)
+
 module.exports = routes;

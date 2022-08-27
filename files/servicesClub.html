@@ -12,6 +12,7 @@
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <!-- Script Source: https://ionic.io/ionicons -->
+    <script src="services.js"></script>
 </head>
 <body>
 <header id="headerTop">
@@ -131,23 +132,22 @@
     <pre></pre>
 
     <div class="container">
-        <div class="contact-box">
-            <div class="left"></div>
-            <div class="right">
-
-                <!-- Email - hier "xeqdojde" ändern!! -->
-                <form action="https://formspree.io/f/xdojkzrb" method="POST">
-                    <h2>Contact Us</h2>
-                    <input type="text" name="Name" class="field"  placeholder="Your Name" required>
-                    <input type="email" name="Email" class="field"  placeholder="Your Email" required>
-                    <input type="text" name="Phone" class="field"  placeholder="Phone" required>
-                    <textarea type="text" name="Message" placeholder="Message" class="field"></textarea>
-                    <button class="btn" type="submit">Send</button>
-                </form>
-            </div>
-        </div>
+        <h1>contact us</h1>
+        <br>
+        <br>
+        <h3><b>Anything you would like to tell us?</b></h3>
+        <h3>Just contact us</h3>
+        <form action="javascript:submitForm('club')">
+            <input id="form-first-name" type="text" name="FirstName" class="field" placeholder="First Name" required>
+            <input id="form-last-name" type="text" name="LastName" class="field" placeholder="Last Name" required>
+            <input id="form-email" type="email" name="Email" class="field" placeholder="Mail" required>
+            <input id="form-phone" type="tel" name="Phone" class="field" placeholder="Phone" required
+                   pattern="\+?[0-9]{12,}">
+            <textarea id="form-message" type="text" name="Message" placeholder="Message" class="field"></textarea>
+            <button id="submit-form" class="btn" type="submit">Send Message</button>
+        </form>
+        <br>
     </div>
-    <br>
 
 </main>
 
@@ -167,11 +167,9 @@
                     <ion-icon name="mail-outline"></ion-icon>
                 </a>
             </li>
-            <li class="footerElement"><a href="exploreClub.html" class="footer_options">Explore</a></li>
+            <li class="footerElement"><a href="exploreBar.html" class="footer_options">Explore</a></li>
             <li class="footerElement"><a href="searchClub.html" class="footer_options">Search</a></li>
             <li class="footerElement"><a href="aboutusClub.html" class="footer_options">About Us</a></li>
-            <li class="footer_last_line1"><a href="datenschutzClub.html" class="footer_icons">Datenschutzerklärung</a></li>
-            <li class="footer_last_line2"><a href="impressumClub.html" class="footer_icons">Impressum</a></li>
             <li id="copyright">&#169; Concique 2022</li>
         </ul>
     </div>

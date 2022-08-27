@@ -84,6 +84,12 @@ class BarController {
             }
         }
     }
+
+    sendForm = (req, res) => {
+        // TODO
+        console.log(req.body, "bar");
+        res.sendStatus(200);
+    }
 }
 
 module.exports = new BarController();
