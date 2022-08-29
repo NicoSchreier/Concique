@@ -242,6 +242,7 @@ li {
     position: absolute;
     left: 7%;
     top: 45%;
+    text-shadow: 6px 6px black;
 }
 
 #clubText {
@@ -252,6 +253,7 @@ li {
     position: absolute;
     left: 38%;
     top: 45%;
+    text-shadow: 6px 6px black;
 }
 
 #eventText {
@@ -263,6 +265,7 @@ li {
     left: 65%;
     top: 35%;
     text-align: center;
+    text-shadow: 6px 6px black;
 }
 
 #barImg {

@@ -45,7 +45,7 @@ function mouseOverEvent() {
     document.getElementById("cLogoEvent").style.opacity = "1";
     document.getElementById("eventText").style.opacity = "1";
     document.getElementById("eventImg").style.transform = "scale(1.25)";
-    document.getElementById("eventImg").style.filter = "grayscale(0%)";
+    document.getElementById("eventImg").style.filter = "grayscale(50%)";
 }
 
 function mouseOutEvent() {
