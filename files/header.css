@@ -22,7 +22,7 @@ header {
 }
 
 .navbar-nav {
-    align-items: flex-end;
+    align-items: center;
 }
 
 .navbar-collapse, .navbar-nav, .nav-item {
@@ -112,7 +112,6 @@ header {
 }
 
 .nav-link {
-    margin-left: 2em;
     color: var(--text-color) !important;
     font-weight: 600;
     float: left !important;
@@ -196,10 +195,6 @@ label {
         min-width: 100vw;
     }
 
-    header ion-icon {
-        display: none;
-    }
-
     .navbar-nav li {
         padding: 0;
     }
@@ -209,8 +204,12 @@ label {
     }
 
     .navbar-nav .nav-link {
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: .5em !important;
+        padding-right: .5em !important;
+    }
+
+    .navbar-nav .dropdown {
+        margin-left: 1.5em !important;
     }
 
     .dropdown-menu {
