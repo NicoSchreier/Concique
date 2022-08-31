@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Concique - Search Event Locations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logos/concique_logo_blue.ico" type="image/ico">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="searchEvent.js"></script>
+</head>
+<body>
+<header id="headerTop">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-custom bg-custom">
+        <a class="navbar-brand" href="#headerTop">
+            <img src="images/logos/concique_logo_white.png" alt="concique_logo" id="logo">
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+
+                    <a class="nav-link" href="exploreEvent.html">
+                        <ion-icon name="eye" class="headerIcons"></ion-icon>
+                        Explore
+                    </a>
+                </li>
+                <div class="headerLine"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="">
+                        <ion-icon name="search" class="headerIcons"></ion-icon>
+                        Search
+                    </a>
+                </li>
+                <div class="headerLine"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutusEvent.html">
+                        <ion-icon name="people" class="headerIcons"></ion-icon>
+                        About Us
+                    </a>
+                </li>
+                <div class="headerLine"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicesEvent.html">
+                        <ion-icon name="add-circle-outline" class="headerIcons"></ion-icon>
+                        Services
+                    </a>
+                </li>
+                <div class="headerLine"></div>
+                <li class="nav-item dropdown bg-custom">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <ion-icon name="bookmark" class="headerIcons"></ion-icon>
+                        Event Location
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="searchBar.html">Bar</a>
+                        <a class="dropdown-item" href="searchClub.html">Club</a>
+                        <a class="dropdown-item" href="searchEvent.html">Event Location</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="mainPage">
+        <h1 class="pageTitle">Search for an Event Location</h1>
+
+        <div id="searchListContainer">
+            <form id="inputForm">
+                <fieldset>
+                    <ul class="searchList">
+                        <li class="searchElement" class="element1">
+                            <div class="whereGrid">
+                                <div class="icon">
+                                    <ion-icon name="location" class="listIcon"></ion-icon>
+                                </div>
+
+                                <div class="line"></div>
+
+                                <div class="searchInput">
+                                    <label for="where">Where?</label>
+                                    <br>
+                                    <select class="form-control" id="where" name="where" required>
+                                        <option>All locations</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="searchElement" class="element2">
+                            <div class="whereGrid">
+                                <div class="icon">
+                                    <ion-icon name="calendar" class="listIcon"></ion-icon>
+                                </div>
+
+                                <div class="line"></div>
+
+                                <div class="searchInput">
+                                    <label for="when">When?</label>
+                                    <br>
+                                    <input type="date" id="when" name="when" required>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="searchElement" class="element3">
+
+                            <div class="whereGrid">
+                                <div class="icon">
+                                    <ion-icon name="create" class="listIcon"></ion-icon>
+                                </div>
+
+                                <div class="line"></div>
+
+                                <div class="searchInput">
+                                    <label for="what">What?</label>
+                                    <br>
+                                    <select class="form-control" id="what" name="where" required>
+                                        <option>Any Event Locations</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+
+                    <div class="center">
+                        <button type="submit" id="searchButton" class="center">
+                            <ion-icon name="search" id="searchIcon"></ion-icon>
+                        </button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <!--
+        <div id="scrollDown">
+            <a href="#results">
+                <p id="showResults">show results</p>
+                <ion-icon name="chevron-down" id="scrollDownIcon"></ion-icon>
+            </a>
+        </div>
+        -->
+    </div>
+
+    <div class="results" id="results">
+        <h1 class="pageResult">Results</h1>
+
+        <div id="clubList">
+            <!--
+            <article>
+                <div class="wallPaper">
+                    <img src="images/EventTest1.png" alt="images" class="wallPaperImage">
+                </div>
+
+                <h2 class="name">Praterdome</h2>
+
+                <div class="detailsButtonContainer">
+                    <button type="button" class="detailsButton">
+                        <ion-icon name="chevron-forward-outline" class="detailButtonIcon"></ion-icon>
+                    </button>
+                </div>
+
+                <button type="text" class="infoLabel">
+                    <ion-icon name="heart"></ion-icon>
+                    <label>34</label>
+                </button>
+
+                <button type="text" class="infoLabel">
+                    <ion-icon name="eye"></ion-icon>
+                    <label>315</label>
+                </button>
+            </article>
+            -->
+        </div>
+    </div>
+
+    <div id="loadMore">
+        <p>...</p>
+        <p id="loadMoreButton">load more</p>
+    </div>
+</main>
+<footer>
+    <div class="mobile_footer">
+        <ul class="footer_list">
+            <li id="footer_logo1"><img src="images/logos/concique_logo_white.png" alt="Concique_Logo" id="footer_logo2">
+            </li>
+            <li class="footerElement">
+                <a href="https://instagram.com/concique" class="footer_icons" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="https://www.facebook.com/Concique-103265901223619/" class="footer_icons" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="mailto:office@concique.at" class="footer_icons" target="_blank">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a>
+            </li>
+            <li class="footerElement"><a href="exploreEvent.html" class="footer_options">Explore</a></li>
+            <li class="footerElement"><a href="searchEvent.html" class="footer_options">Search</a></li>
+            <li class="footerElement"><a href="aboutusEvent.html" class="footer_options">About Us</a></li>
+            <li class="footer_last_line1"><a href="datenschutzClub.html" class="footer_icons">Datenschutzerklärung</a></li>
+            <li class="footer_last_line2"><a href="impressumClub.html" class="footer_icons">Impressum</a></li>
+            <li id="copyright">&#169; Concique 2022</li>
+        </ul>
+    </div>
+</footer>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

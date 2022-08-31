@@ -172,7 +172,7 @@ class SearchPage {
                 }
             }
 
-            if (!correctTag && tag !== "Any Club") {
+            if (!correctTag && tag !== "Any Event Locations") {
 
                 continue;
             }
@@ -198,22 +198,22 @@ class SearchPage {
 
 document.addEventListener("DOMContentLoaded", function (event) {
 
-    const eventLocations = [1, 6, 7];
+    const eventLocations = [1, 2, 6, 7, 9, 12];
 
-    const barTags = [
-
-        "cocktail",
-        "eatery",
-        "reservations",
-        "coffee",
-        "ice"
+    const eventLocationsTags = [
+        "spacious",
+        "small",
+        "outdoors",
+        "indoors",
+        "well lit"
     ]
 
 
 
+    console.log(eventLocationsTags[1]);
     let searchPage = new SearchPage();
     searchPage.addEventLocations(eventLocations);
-    searchPage.addEventTags(barTags);
+    searchPage.addEventTags(eventLocationsTags);
 
     let form = document.getElementById("inputForm");
     let eventList = [];
@@ -241,7 +241,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         console.log(tag);
 
         // Fetch Events
-        const response = await fetch(`/api/barEvents`);
+        const response = await fetch(`/api/eventEvents`);
 
         if (!response.ok) {
 
@@ -288,7 +288,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             let alertContainer = document.createElement("div");
             alertContainer.setAttribute("class", "alert alert-primary");
             alertContainer.setAttribute("role", "alert");
-            alertContainer.append("There are no more Clubs to load !");
+            alertContainer.append("There are no more Event Locations to load !");
 
             document.getElementById("loadMore").append(alertContainer);
             console.log("Help");
