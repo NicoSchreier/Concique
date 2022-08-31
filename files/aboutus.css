@@ -53,9 +53,8 @@ ul {
 
 #about_logo_desktop {
     display: flex;
-    height: auto;
+    height: 100%;
     width: 100%;
-    max-height: 500px;
     border-radius: 30px;
 }
 
@@ -66,11 +65,56 @@ ul {
     border-radius: 30px;
 }
 
-.about_us_team {
+.team_spacer {
+    border-top: 3px solid #294652;
+}
+
+.about_us_team_header {
+    color: var(--text-color);
+    font-size: 4em;
+    margin-top: 30px;
+}
+
+.about_us_team1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    color: var(--text-color);
+    padding: 100px;
+}
+
+.about_us_team2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    color: var(--text-color);
+    margin-bottom: 30px;
+    padding: 100px;
+}
+
+.about_border {
+    border: 3px solid #294652;
+}
+
+.team_person_img {
+    height: auto;
+    width: auto;
+    max-height: 250px;
+    max-width: 250px;
+}
+
+.about_name {
+    font-size: 1.75em;
+}
+
+.about_description {
+    font-size: 1.25em;
+}
+
+.about_us_programmers {
     background-color: var(--main-color);
     padding: 20px;
     font-size: 1.25em;
     color: var(--text-color);
+    text-align: center;
 }
 
 
@@ -139,5 +183,9 @@ Media Query for Mobile
 
     #about_logo_desktop {
         display: none;
+    }
+
+    .about_us_programmers {
+        font-size: 1em;
     }
 }
