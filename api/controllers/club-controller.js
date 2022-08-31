@@ -1,4 +1,6 @@
 const model = require("../models/club-model");
+const {Form} = require("../models/form-model");
+const {getMailer} = require("../models/mailer-model");
 
 class ClubController {
     static REQUIRED = ["name", "image", "likes", "views"];
@@ -86,9 +88,32 @@ class ClubController {
     }
 
     sendForm = (req, res) => {
-        // TODO
-        console.log(req.body, "club");
-        res.sendStatus(200);
+        let form = new Form(req.body.firstName, req.body.lastName, req.body.email, req.body.phone, req.body.message);
+        let mailer = getMailer();
+        mailer.sendMail({
+            from: "conciquecont1@outlook.com", // sender address
+            to: "<Recipients>", // list of receivers Format: "email@mail.at, email2@mail.at, .."
+            subject: "Contact Form", // Subject line
+            html: `<u>From</u>: ${form.firstName} ${form.lastName}` +
+                "<br>" +
+                `<u>E-Mail</u>: ${form.email}` +
+                "<br>" +
+                `<u>Number</u>: ${form.phone}` +
+                "<br>" +
+                `<u>Subject</u>: Kundenanfrage` +
+                "<br>" +
+                `<u>Datenschutz</u>: Daten dürfen gespeichert und verarbeitet werden!` +
+                "<br><br>" +
+                "<b><u>Message</u></b>:" +
+                "<br><br>" +
+                `${form.message}` +
+                "<br><br>" +
+                "-----<br><br>" +
+                "This E-Mail was sent from a contact form on Concique"
+        }).then((info) => {
+            console.log("Message sent: %s", info.messageId);
+            res.sendStatus(200);
+        });
     }
 }
 
