@@ -5,8 +5,10 @@ const express = require('express');
 //We create our routes
 const clubRouter = require('./api/routes/club-routes');
 const barRouter = require('./api/routes/bar-routes');
+const eventRouter = require('./api/routes/event-routes');
 const searchClubRouter = require('./api/routes/searchClub-routes');
 const searchBarRouter = require('./api/routes/searchBar-routes');
+const searchEventRouter = require('./api/routes/searchEvent-routes');
 //We use express a web application framework - test
 const app = express();
 //Select our port 3000
@@ -19,8 +21,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use('/api', clubRouter);
 app.use('/api', barRouter);
+app.use('/api', eventRouter);
 app.use('/api', searchClubRouter);
 app.use('/api', searchBarRouter);
+app.use('/api', searchEventRouter);
 
 /*
 This will render and serve the HTML form to the client to fill in the login credentials.
