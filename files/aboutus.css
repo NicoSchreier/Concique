@@ -77,14 +77,14 @@ ul {
 
 .about_us_team1 {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
     color: var(--text-color);
     padding: 100px;
 }
 
 .about_us_team2 {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33.3% 33.3% 33.3%;
     color: var(--text-color);
     margin-bottom: 30px;
     padding: 100px;
@@ -182,6 +182,18 @@ Media Query for Mobile
     }
 
     #about_logo_desktop {
+        display: none;
+    }
+
+    .about_us_team_header {
+        font-size: 3em;
+    }
+
+    .about_us_team1 {
+        grid-template-rows: 50% 50%;
+    }
+
+    .about_us_team2 {
         display: none;
     }
 
