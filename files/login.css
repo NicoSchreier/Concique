@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500&display=swap');
+
+:root {
+    --dark-color: #09262F;
+    --bright-color: #A7BFD5;
+    --shadow-color: #071e26;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Darker Grotesque', sans-serif;
+    background-color: var(--dark-color);
+    color: var(--bright-color);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+h1 {
+    white-space: nowrap;
+}
+
+.form-popup {
+    font-size: 1.1em;
+    border: 1px solid var(--bright-color);
+    border-radius: 3em;
+    box-shadow: 0 -10px 40px var(--shadow-color);
+    padding: 2em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input {
+    font-weight: 300;
+    padding-left: 0.5em;
+}
+
+label {
+    font-weight: 400;
+}
+
+#login_button {
+    font-weight: 500;
+    font-size: 1.1em;
+    color: var(--bright-color);
+}
+
+#username, #password, #login_button, .btn {
+    border-color: var(--bright-color);
+}
+
+#login {
+    padding-top: 2em;
+
+}
+
+@media (min-width: 400px) {
+
+}
